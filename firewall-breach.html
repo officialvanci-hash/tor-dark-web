@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Firewall Breach</title>
+<style>
+body{
+ background:#0a0a0a;
+ color:#00ff00;
+ font-family:monospace;
+ padding:20px;
+}
+#bar{
+ width:0%;
+ height:25px;
+ background:#00ff00;
+ margin-top:20px;
+ transition:0.4s;
+}
+</style>
+</head>
+<body>
+
+<h2>🔥 FIREWALL BREACH INITIATED</h2>
+<div id="bar"></div>
+
+<script>
+let p=0;
+setInterval(()=>{
+ p+=5;
+ if(p>100){p=100}
+ document.getElementById("bar").style.width=p+"%";
+ if(p==100){
+   document.body.innerHTML += "<h1>🔥 FIREWALL BREACHED</h1>";
+ }
+},200);
+</script>
+
+</body>
+</html>
