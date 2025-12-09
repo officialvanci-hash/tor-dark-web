@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IP Trace Scanner</title>
+<style>
+body{
+    background:black;color:#00ffff;
+    font-family:monospace;padding:30px;
+}
+a{
+    color:#00ffff;
+    text-decoration:none;
+    font-size:20px;
+}
+</style>
+</head>
+
+<body>
+<h1>> INITIALIZING GLOBAL IP TRACE...</h1>
+<p id="trace"></p>
+
+<br><br>
+<a href="index.html">⬅ BACK</a>
+
+<script>
+let t=document.getElementById("trace");
+let pct=0;
+
+let int=setInterval(()=>{
+    pct++;
+    t.innerHTML=
+        "> TRACING: "+
+        (Math.random()*255|0)+"."+
+        (Math.random()*255|0)+"."+
+        (Math.random()*255|0)+"."+
+        (Math.random()*255|0)+" :: "+pct+"%";
+
+    if(pct>=100){
+        clearInterval(int);
+        t.innerHTML+="\n> LOCATION LOCKED.";
+    }
+},130);
+</script>
+
+</body>
+</html>
