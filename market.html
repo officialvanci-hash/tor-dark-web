@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dark Web Market</title>
+<style>
+body{
+    background:#000;
+    color:#0f0;
+    font-family:monospace;
+    padding:20px;
+}
+.market-title{
+    font-size:32px;
+    border-bottom:2px solid #0f0;
+    padding-bottom:10px;
+    margin-bottom:20px;
+    text-align:center;
+    text-shadow:0 0 10px #0f0;
+}
+.item{
+    border:1px solid #0f0;
+    padding:15px;
+    margin-bottom:15px;
+    background:rgba(0,255,0,0.05);
+    box-shadow:0 0 10px #0f0;
+}
+.item:hover{
+    background:rgba(0,255,0,0.15);
+    transition:0.3s;
+}
+.price{
+    color:#ff0000;
+    font-size:18px;
+}
+.btn{
+    color:black;
+    background:#0f0;
+    padding:6px 14px;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+.btn:hover{
+    background:#fff;
+}
+#loading{
+    font-size:22px;
+    text-align:center;
+    animation:blink 1s infinite;
+}
+@keyframes blink{
+    0%{opacity:1}
+    50%{opacity:0.2}
+    100%{opacity:1}
+}
+</style>
+</head>
+<body>
+
+<div id="loading">Decrypting Market Listings...</div>
+
+<div id="content" style="display:none;">
+
+<h1 class="market-title">🕸 DARK NET MARKETPLACE</h1>
+
+<div class="item">
+    <h2>Stolen Credit Card Dump (Worldwide)</h2>
+    <p>Fresh logs • CVV • Billing ZIP • High-limit cards</p>
+    <p class="price">Price: 110.045 BTC</p>
+    <button class="btn">Open Listing</button>
+</div>
+
+<div class="item">
+    <h2>Premium Ransomware Kit</h2>
+    <p>Fully undetected • Admin panel • Auto-spread module</p>
+    <p class="price">Price: 3000.120 BTC</p>
+    <button class="btn">Open Listing</button>
+</div>
+
+<div class="item">
+    <h2>Fake Passport Generator</h2>
+    <p>Countries: US, UK, India, Canada • Scannable & Hologram</p>
+    <p class="price">Price:23.300 BTC</p>
+    <button class="btn">Open Listing</button>
+</div>
+
+<div class="item">
+    <h2>Zero-Day Browser Exploit</h2>
+    <p>Unpatched vulnerability • Remote command execution</p>
+    <p class="price">Price: 50.85 BTC</p>
+    <button class="btn">Open Listing</button>
+</div>
+
+<div class="item">
+    <h2>Weapon Marketplace (Hidden)</h2>
+    <p>Silenced pistols • Micro SMGs • Untraceable serials</p>
+    <p class="price">Price: Login Required</p>
+    <button class="btn">Unlock Access</button>
+</div>
+
+<div class="item">
+    <h2>Botnet Rental (5000 Devices)</h2>
+    <p>24-hour DDoS power • High-bandwidth nodes</p>
+    <p class="price">Price: 0.050 BTC per day</p>
+    <button class="btn">Rent Botnet</button>
+</div>
+
+<div class="item">
+    <h2>Database Leak Bundle</h2>
+    <p>Emails • Passwords • Full user info • 15M records</p>
+    <p class="price">Price: 0.10 BTC</p>
+    <button class="btn">View Data</button>
+</div>
+
+</div>
+
+<script>
+// Fake loading decrypt animation
+setTimeout(()=>{
+    document.getElementById("loading").style.display="none";
+    document.getElementById("content").style.display="block";
+},3500);
+</script>
+
+</body>
+</html>
