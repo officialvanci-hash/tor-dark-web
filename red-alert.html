@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RED ALERT MODE</title>
+<style>
+body{
+    background:black;
+    color:#00ff55;
+    font-family:monospace;
+    overflow:hidden;
+}
+#alertRed{
+    position:fixed;top:0;left:0;
+    width:100%;height:100%;
+    background:rgba(255,0,0,0.1);
+    animation:flash 0.3s infinite;
+}
+@keyframes flash{
+    0%{opacity:0;}50%{opacity:1;}100%{opacity:0;}
+}
+.shake{
+    animation:shakeAnim 0.2s infinite;
+}
+@keyframes shakeAnim{
+    0%{transform:translate(0,0);}
+    25%{transform:translate(4px,-4px);}
+    50%{transform:translate(-4px,4px);}
+    75%{transform:translate(4px,4px);}
+    100%{transform:translate(-4px,-4px);}
+}
+.corrupt{
+    color:#ff0033;
+    text-shadow:0 0 10px #ff0033;
+    font-weight:bold;
+    font-size:20px;
+}
+a{
+    color:#00ff55;
+    font-size:20px;
+    text-decoration:none;
+    position:fixed;bottom:20px;left:20px;
+}
+</style>
+</head>
+
+<body class="shake">
+<div id="alertRed"></div>
+
+<h1 class="corrupt">!!! SYSTEM CORE BREACH DETECTED !!!</h1>
+<p class="corrupt">> FILES CORRUPTED...</p>
+<p class="corrupt">> SECURITY GRID FAILURE...</p>
+<p class="corrupt">> OVERRIDE SEQUENCE REJECTED...</p>
+
+<a href="index.html">⬅ BACK</a>
+
+</body>
+</html>
